@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини-чат</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Добро пожаловать в мини-чат!</h1>
+    <div id="loginScreen">
+        <p>введите ваше имя:</p>
+        <input type="text" id="nameInput" placeholder="Имя пользователя">
+        <button id="joinButton">Войти</button>
+    </div>
+
+    <div id="chatScreen" style="display: none;">
+        <p>Здесь вы можете общаться с другими пользователями.</p>
+        <ul id="messages"></ul>
+        <input type="text" id="messageInput" placeholder="Введите сообщение...">
+        <button id="sendButton">Отправить</button>
+    </div>
+
+</body>
+</html>
